@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;    
+}
+.logo{
+    font-size: 1.5rem;
+}
+.logo img{
+    width: 2rem;
+    margin-right: .5rem;
+}
+.right-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.navitems ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    cursor: pointer;
+}
+.navbar ul li:hover{
+    color: yellow;
+}
+.search input{
+    border-radius: .3rem;
+    width: 6rem;
+    height: 0.5rem;
+    padding:0.9rem;
+    border: none;
+}
+
+.cart_menu{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.cart_menu span:nth-child(2){
+    display: none;
+}
+
+@media screen and (max-width: 640px ){
+    .navitems ,.search{
+        display: none;
+    }
+    .cart_menu span:nth-child(2){
+        display: block;
+    }
+}

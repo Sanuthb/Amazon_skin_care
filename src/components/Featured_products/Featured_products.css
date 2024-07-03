@@ -1,0 +1,146 @@
+.Featured_products {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 5rem;
+}
+
+.top_container {
+    position: relative;
+}
+
+.top_container .Plane_i {
+    position: absolute;
+    top: -100%;
+    left: -30%;
+    width: 7rem;
+}
+
+.top_container span {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.bottom_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+
+}
+
+.bottom_container .left_container li {
+    font-size: 1.4rem;
+    list-style: none;
+    line-height: 3.4rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bottom_container .left_container li:hover {
+    color: rgb(253, 64, 95);
+}
+
+.bottom_container .right_container {
+    width: 50rem;
+    height: 26rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.right_container .product_container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    width: 15rem;
+    height: 11rem;
+}
+
+.product_container .products_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.products_details span:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.products_details span:nth-child(2) {
+    font-size: 1rem;
+}
+
+.products_details span:nth-child(3) {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.products_details div {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.featured_products {
+    width: 25%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    transform: rotate(-20deg);
+    bottom: -20%;
+}
+
+@media screen and (max-width:640px) {
+    .Featured_products {
+        margin-top: 1rem;
+    }
+    .top_container .Plane_i {
+        top: -100%;
+        left: -30%;
+        width: 5rem;
+    }
+
+    .top_container span {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .bottom_container {
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .bottom_container .left_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .bottom_container .left_container li {
+        font-size: 1rem;
+    }
+    .bottom_container .right_container {
+        width: 20rem;
+        height: 26rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

@@ -1,0 +1,191 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+  .hero-container {
+      padding: 0rem 2rem;
+      height: 75vh;
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  .hero-container1,
+  .hero-container3 {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+  }
+
+  .hero-container1 span {
+      text-transform: uppercase;
+      font-weight: 600;
+      width: min-content;
+      font-size: 1.5rem;
+  }
+
+  .hero-container1 .text1 span {
+      text-transform: capitalize;
+      width: min-content;
+      font-size: 3rem;
+  }
+
+  .hero-container1 .text1 p {
+      font-size: 1.2rem;
+  }
+
+  .hero-container3 {
+      text-align: right;
+  }
+
+  .hero-container3 .text3 span,
+  .text4 span {
+      font-size: 3rem;
+      font-weight: 600;
+  }
+
+  .hero-container3 .text3 p,
+  .text4 p {
+      font-size: 1.4rem;
+  }
+
+  .hero-container2 {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      position: relative;
+  }
+
+  .blue-circle {
+      background: #22bcfe;
+      width: 500px;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      border-radius: 50%;
+  }
+
+  .hero-container2 img {
+      width: 500px;
+  }
+
+  .hero-container2 .text2 {
+      position: absolute;
+      left: 70%;
+      top: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .9rem;
+
+  }
+
+  .hero-container2 .text2 .icon {
+      background-color: #fff;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: .4rem solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+
+  }
+
+  .signup {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .4rem;
+      background-color: #fff;
+      padding: .7rem;
+      border-radius: 1rem;
+      box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.589);
+  }
+
+  .signup span {
+      font-size: 1rem;
+  }
+
+  .signup i {
+      font-size: 1.4rem;
+      font-weight: 600;
+  }
+
+  @media screen and (max-width: 640px) {
+      .hero-container {
+          grid-template-areas: 'left center center'
+              'right right right';
+      }
+
+      .hero-container>:first-child {
+          grid-area: left;
+      }
+
+      .hero-container>:nth-child(2) {
+          grid-row: center;
+      }
+
+      .hero-container>:last-child {
+          grid-area: right;
+          display: flex;
+          justify-content: space-between;
+
+      }
+
+      .hero-container1 span {
+          font-weight: 500;
+          font-size: 1rem;
+      }
+
+      .hero-container1 .text1 span {
+          font-size: 2rem;
+      }
+
+      .hero-container1 .text1 p {
+          font-size: 1rem;
+      }
+
+      .hero-container2 img {
+          width: 250px;
+      }
+
+      .blue-circle {
+          width: 250px;
+      }
+
+      .hero-container2 .text2 {
+          bottom: -10%;
+          left: 0%;
+      }
+
+      .hero-container3 {
+          text-align: left;
+      }
+
+      .hero-container3 .text3 span,
+      .text4 span {
+          font-size: 2rem;
+      }
+
+      .hero-container3 .text3 p,
+      .text4 p {
+          font-size: 1rem;
+      }
+
+      .hero-container2 .text2 span {
+          width: 8rem;
+          height: 2rem;
+          font-size: .9rem;
+      }
+
+      .hero-container2 .text2 .icon {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          border: .4rem solid black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+
+      }
+  }

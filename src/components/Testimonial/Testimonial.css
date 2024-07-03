@@ -1,0 +1,113 @@
+
+.testi_top_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1rem;
+
+}
+
+.testi_top_container .container1{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5rem;
+}
+.testi_top_container .container1 span:nth-child(1){
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.testi_top_container .container1 p{
+    font-size:1rem;
+    text-wrap: wrap;
+}
+.testi_top_container .container1 span , .container3 span{
+    margin-bottom: 1rem;
+}
+.testi_top_container .container3{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.testi_top_container .container3 span:nth-child(1){
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.testi_top_container .container3 p{
+    font-size: 1rem;
+}
+.testi_top_container .container2{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.testi_top_container .container2 img{
+    width: 30rem;
+}
+
+.testi_bottom_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.testi_bottom_container .container_name{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.testi_bottom_container .container_name span{
+        font-size: 3rem;
+        font-weight: 600;
+}
+
+.testi_slider{
+    width: 90%;
+    overflow: hidden;
+    margin-top: 4rem;
+}
+
+.testimonial{
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.testimonial span:nth-child(2){
+    font-size: 0.8rem;
+    text-align: justify;
+    width: fit-content;
+}
+
+.testimonial span:nth-child(3){
+    width: 10rem;
+    height: 1px;
+    background-color: black;
+}
+.testimonial span:nth-child(4){
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+@media  screen and (max-width:640px) {
+    .testi_top_container{
+        grid-template-columns: 1fr;    
+    }
+    .testi_top_container .container2 img{
+        width: 20rem;
+    }
+}
